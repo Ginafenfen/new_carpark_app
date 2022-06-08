@@ -1,0 +1,79 @@
+/* calendar */
+body {
+  text-align: center;
+  background-color: #e0dacc;
+  background-image: url("img6.jpeg");
+  background-size: contain;
+  background-size: cover;
+}
+header {
+  padding: 0%;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+h1 {
+  color: #4d3b22;
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #4d3b22;
+}
+
+table {
+  border-collapse: collapse;
+  background: #b3aa9f;
+  color: black;
+  font-size: 70%;
+  max-width: 20%;
+}
+
+th,
+td {
+  font-weight: bold;
+}
+
+input {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+td {
+  padding: 10px;
+}
+
+h3 {
+  font-size: x-small;
+}
+
+/* integer number */
+#number,
+#number1,
+#number2 {
+  height: 25px;
+  width: 250px;
+  margin: 10px auto;
+  background-color: #b3aa9f;
+  text-align: left;
+}
+/* ////slotcolor/// */
+#bookingSlot2,
+#bookingSlot3 {
+  background-color: black;
+}
+
+p {
+  color: #1f1406;
+  background-color: #b3aa9f;
+  height: 25px;
+  width: 200px;
+  font-family: "Trebuchet MS";
+}
+img {
+  position: absolute;
+  bottom: 30%;
+  size: 10px;
+  left: 3%;
+}
