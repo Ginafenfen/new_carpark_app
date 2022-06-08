@@ -32,6 +32,9 @@ btns1.forEach(function (btn1) {
       const here1 = document.querySelector(".here1");
       here1.style.backgroundColor = "red";
     }
+    if (storeTheNumber1.innerText > 3) {
+      document.querySelector("#carImg").style.animation = "highway 30s 2";
+    }
   });
 });
 
@@ -68,6 +71,9 @@ btns2.forEach(function (btn2) {
       const here2 = document.querySelector(".here2");
       here2.style.backgroundColor = "red";
     }
+    if (storeTheNumber2.innerText > 3) {
+      document.querySelector("#carImg").style.animation = "highway 30s 2";
+    }
   });
 });
 
@@ -99,6 +105,9 @@ btns3.forEach(function (btn3) {
       alert("You have booked the last slot");
       const here3 = document.querySelector(".here3");
       here3.style.backgroundColor = "red";
+    }
+    if (storeTheNumber3.innerText > 3) {
+      document.querySelector("#carImg").style.animation = "highway 30s 2";
     }
   });
 });
