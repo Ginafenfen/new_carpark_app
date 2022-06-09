@@ -1,6 +1,10 @@
 "use strict";
-/////June1////
 
+///prompt_msg////
+const myName = window.prompt("Hi User,start now ?");
+console.log("Welcome to the page", myName);
+
+///build for 5 buttons//
 let date1 = ["slot_1", "slot_2", "slot_3", "slot_4", "slot_5"];
 
 for (let i in date1) {
@@ -9,7 +13,6 @@ for (let i in date1) {
   table1.append(clickBtn1);
   clickBtn1.id = "clickBtn1";
   clickBtn1.innerHTML = date1[i];
-  // document.body.appendChild(clickBtn2);
   clickBtn1.style.backgroundColor = "green";
 }
 
