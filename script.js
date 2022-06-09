@@ -1,9 +1,5 @@
 "use strict";
 
-///prompt_msg////
-const myName = window.prompt("Hi User,start now ?");
-console.log("Welcome to the page", myName);
-
 ///make 5 buttons//
 let date1 = ["slot_1", "slot_2", "slot_3", "slot_4", "slot_5"];
 
@@ -23,6 +19,7 @@ let integer = 0;
 btns1.forEach(function (btn1) {
   btn1.addEventListener("click", function (e) {
     console.log("target", e.target);
+
     e.target.innerText = "Booked";
     e.target.style.backgroundColor = "red";
 
@@ -30,13 +27,15 @@ btns1.forEach(function (btn1) {
     const storeTheNumber1 = document.querySelector(".storeTheNumber1");
     integer += 1;
     storeTheNumber1.innerHTML = integer;
+
     if (storeTheNumber1.innerText >= 5) {
       alert("You have booked the last slot");
       const here1 = document.querySelector(".here1");
       here1.style.backgroundColor = "red";
     }
+
     if (storeTheNumber1.innerText > 3) {
-      document.querySelector("#carImg").style.animation = "highway 30s 2";
+      document.querySelector("#carImg").style.animation = "highway 30s 100";
     }
   });
 });
@@ -62,6 +61,7 @@ let integer1 = 0;
 btns2.forEach(function (btn2) {
   btn2.addEventListener("click", function (e) {
     console.log("target", e.target);
+
     e.target.innerText = "Booked";
     e.target.style.backgroundColor = "red";
 
@@ -69,11 +69,13 @@ btns2.forEach(function (btn2) {
     const storeTheNumber2 = document.querySelector(".storeTheNumber2");
     integer1 += 1;
     storeTheNumber2.innerHTML = integer1;
+
     if (storeTheNumber2.innerText >= 5) {
       alert("You have booked the last slot");
       const here2 = document.querySelector(".here2");
       here2.style.backgroundColor = "red";
     }
+
     if (storeTheNumber2.innerText > 3) {
       document.querySelector("#carImg").style.animation = "highway 30s 2";
     }
@@ -89,7 +91,6 @@ for (let i in date3) {
   table3.append(clickBtn3);
   clickBtn3.id = "clickBtn3";
   clickBtn3.innerHTML = date3[i];
-  // document.body.appendChild(clickBtn3);
   clickBtn3.style.backgroundColor = "green";
 }
 
@@ -97,11 +98,12 @@ const btns3 = document.querySelectorAll("#clickBtn3");
 btns3.forEach(function (btn3) {
   btn3.addEventListener("click", function (e) {
     console.log("target", e.target);
+
     e.target.innerText = "Booked";
     e.target.style.backgroundColor = "red";
+
     const storeTheNumber3 = document.querySelector(".storeTheNumber3");
 
-    ///add 1 once button click///
     integer3 += 1;
     storeTheNumber3.innerHTML = integer3;
     if (storeTheNumber3.innerText >= 5) {
@@ -109,6 +111,7 @@ btns3.forEach(function (btn3) {
       const here3 = document.querySelector(".here3");
       here3.style.backgroundColor = "red";
     }
+
     if (storeTheNumber3.innerText > 3) {
       document.querySelector("#carImg").style.animation = "highway 30s 2";
     }
