@@ -4,7 +4,7 @@
 const myName = window.prompt("Hi User,start now ?");
 console.log("Welcome to the page", myName);
 
-///build for 5 buttons//
+///make 5 buttons//
 let date1 = ["slot_1", "slot_2", "slot_3", "slot_4", "slot_5"];
 
 for (let i in date1) {
